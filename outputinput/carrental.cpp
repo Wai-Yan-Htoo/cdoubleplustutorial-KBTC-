@@ -34,7 +34,7 @@ void Search(){
 		
 		cout<<"enter car name : "<<endl;
 		cin>>car_name;  //BMW
-		car_search(toupper( car_name));
+		car_search(toupper( car_name));//attribute or parameter
 		cout<<"1. continue or 2. exit : ";
 		string stop;
 		cin>>stop;
