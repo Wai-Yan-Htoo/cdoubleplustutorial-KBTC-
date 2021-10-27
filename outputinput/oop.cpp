@@ -10,19 +10,36 @@ using namespace std;
 	
  //default rules Private
  
-class A{
+class Telenor{
 	//member
-	public : 
-	int a=10;
-	void greeting(){
-		cout<<"Public park";
-	}	
+	private : 
+	
+	int megabyte=1000;
+	string greeting(){
+		return "hello";
+	}
+	
+	public:
+		//encapsulation
+		void mbsetter(int megabyte){
+		   	this->megabyte=megabyte;
+		}
+		
+		int mbgetter(){
+			return megabyte;
+		}
+		string getgreeting(){
+			return greeting();
+		}
+		
+	
 };
-
 
 int main(){
 	//Class object
-	A a;
-	a.greeting();
-	cout<<a.a;
+	Telenor t;
+	t.mbsetter(10000);
+	cout<<t.mbgetter()<<endl;
+	cout<<t.getgreeting();
+	
 }
