@@ -2,6 +2,39 @@
 #include <ctime>
 
 using namespace std;
+class A{
+	public: 
+	int age=10;
+};
+class B: public A{
+	public :
+		int ages=20;
+};
+class C:public A{
+	public :
+		int age1=30;
+};
+class D:public B{
+	
+};
+
+class Vendor{
+	private:
+	string name="router";
+	public :
+		//encapsulation
+		void setname(string name){
+			this->name=name;
+		}
+		string getname(){
+			return name;
+		}
+};
+
+class ISP:public Vendor{
+	
+};
+
 //oop
 	/*4 pillars  
 	
@@ -40,6 +73,25 @@ class Telenor{
 };
 
 int main(){
+
+	D d;
+	cout<<d.age;
+	
+	
+	
+	
+	ISP isp;
+	isp.setname("mikrotik router");
+	
+	Vendor v;
+	cout<<"router = "<<v.getname()<<endl;
+	v.setname("Huawei Router");
+	cout<<v.getname()<<endl;
+	
+	
+	
+	
+	
 	//Class object
 	//Telenor t;
 	//t.mbsetter(10000);
