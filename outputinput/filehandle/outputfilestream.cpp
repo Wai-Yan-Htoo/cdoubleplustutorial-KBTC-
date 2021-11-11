@@ -68,8 +68,8 @@ void login(){
 }
 
 int main(){
-	user_registration();
-	//login();
+	//user_registration();
+	login();
 	
 	
 }
