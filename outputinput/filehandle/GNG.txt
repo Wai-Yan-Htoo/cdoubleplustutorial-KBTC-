@@ -1,0 +1,30 @@
+grabandgo
+char ch;
+	while(!file.eof()){
+		file.get(ch);
+		cout<<ch;
+	}
+	file.close();
+grabandgo
+char ch;
+	while(!file.eof()){
+		file.get(ch);
+		cout<<ch;
+	}
+	file.close();
+
+grabandgo
+char ch;
+	while(!file.eof()){
+		file.get(ch);
+		cout<<ch;
+	}
+	file.close();
+
+grabandgo
+char ch;
+	while(!file.eof()){
+		file.get(ch);
+		cout<<ch;
+	}
+	file.close();
